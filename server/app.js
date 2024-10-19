@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-const port = process.env.VITE_SERVER_PORT || 5000;
+const port = process.env.PORT || 5000;
 
 //db connection
 const dbConnection = require("./config/dbconfig");
