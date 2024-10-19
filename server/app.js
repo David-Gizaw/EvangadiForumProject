@@ -15,7 +15,14 @@ app.get("/", (req, res) => {
 });
 
 //cors middleware
-app.use(cors({ origin: ["http://localhost:5173"] }));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://evangadi-forum-project-one.vercel.app/",
+    ],
+  })
+);
 
 //json middleware
 app.use(express.json());
