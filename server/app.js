@@ -14,7 +14,6 @@ app.get("/", (req, res) => {
   res.status(200).send("welcome-to Evangadi-");
 });
 
-//cors middleware
 app.use(
   cors({
     origin: [
