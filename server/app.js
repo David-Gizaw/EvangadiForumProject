@@ -7,7 +7,7 @@ const cors = require("cors");
 const port = process.env.PORT || 5000;
 
 //db connection
-const dbConnection = require("./config/dbconfig");
+const dbConnection = require("./config/dbConfig");
 
 // test get request
 app.get("/", (req, res) => {
